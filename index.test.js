@@ -13,11 +13,9 @@ describe('Social Sequelzie Test', () => {
 
     // Write your tests here
     
-    test("replace with your test", function() {
-        expect(true).toBe(true);
+    test("Can Create User", async function() {
+        const testUser = await User.create({username: 'jalynguy', email: 'james.nguyen@fiserv.com' })
+        expect(testUser.username).toBe(jalynguy);
     })
-
-
-
 
 })
