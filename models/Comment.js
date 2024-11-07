@@ -1,9 +1,8 @@
 
-const {db, DataTypes, Model} = require('./db/connection.js')
+const {db, DataTypes, Model} = require('../db/connection')
 
-class Comment extends Model{};
 
-Comment.init({
+let Comment = db.define("Comment",{
     body: DataTypes.STRING,
     createdAt: DataTypes.STRING
 },

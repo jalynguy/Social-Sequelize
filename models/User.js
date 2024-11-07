@@ -1,8 +1,6 @@
-const {db, DataTypes, Model} = require('./db/connection.js')
+const {db, DataTypes, Model} = require('../db/connection.js')
 
-class User extends Model{};
-
-User.init(
+let User = db.define('User',
     {
     username: DataTypes.STRING,
     email: DataTypes.STRING

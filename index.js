@@ -17,8 +17,8 @@ Comment.belongsTo(Post);
 Post.hasMany(Comment);
 
 // A user can have many likes and vice versa
-User.belongsToMany(Like);
-Like.belongsToMany(User);
+User.belongsToMany(Like, {through: 'user-like'});
+Like.belongsToMany(User, {through: 'user-like'});
 
 
 module.exports = {

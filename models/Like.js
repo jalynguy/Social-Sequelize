@@ -1,9 +1,7 @@
 
-const {db, DataTypes, Model} = require('./db/connection.js')
+const {db, DataTypes, Model} = require('../db/connection.js')
 
-class Like extends Model{};
-
-Like.init({
+let Like = db.define('Like',{
     reactionType: DataTypes.STRING,
     createdAt: DataTypes.STRING
 },

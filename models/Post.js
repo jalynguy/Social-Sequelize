@@ -1,4 +1,4 @@
-const {db, DataTypes, Model} = require('./db/connection.js')
+const {db, DataTypes, Model} = require('../db/connection.js')
 
 class Post extends Model{};
 
